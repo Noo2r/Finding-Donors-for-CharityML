@@ -1,0 +1,69 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap');
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-surface: #f9fafb;
+  --color-surface-dim: #f3f4f6;
+  --color-surface-bright: #ffffff;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f9fafb;
+  --color-surface-container: #ffffff;
+  --color-surface-container-high: #ffffff;
+  --color-surface-container-highest: #f3f4f6;
+
+  --color-on-surface: #111827;
+  --color-on-surface-variant: #6b7280;
+
+  --color-outline: #e5e7eb;
+  --color-outline-variant: #e5e7eb;
+  --color-outline-muted: #d1d5db;
+
+  --color-primary: #7c3aed;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #a78bfa;
+  --color-on-primary-container: #ffffff;
+
+  --color-secondary: #f43f5e;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #fb7185;
+  --color-on-secondary-container: #ffffff;
+
+  --color-tertiary: #10b981;
+  --color-on-tertiary: #ffffff;
+  --color-tertiary-container: #34d399;
+  --color-on-tertiary-container: #ffffff;
+
+  --color-error: #ef4444;
+  --color-on-error: #ffffff;
+  --color-error-container: #f87171;
+  --color-on-error-container: #ffffff;
+
+  --shadow-neon-primary: 0 4px 14px 0 rgba(124, 58, 237, 0.2);
+  --shadow-neon-success: 0 4px 14px 0 rgba(16, 185, 129, 0.1);
+}
+
+body {
+  background-color: var(--color-surface);
+  color: var(--color-on-surface);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom Scrollbar for Light Theme */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-surface-container-lowest);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-outline-muted);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-on-surface-variant);
+}
